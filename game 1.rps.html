@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Peper, Scissor</title>
+    <link rel="stylesheet" href="game 1.rps.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <div><h3 id="player"></h3></div>
+    <div id="userChoice">
+        <h1>User Choice</h1>
+        <div id="userDiv">
+            <img src="img/rock.jpg" alt="rock" id="rock" onclick="userPickup(this)">
+            <img src="img/paper.jpg" alt="paper" id="paper" onclick="userPickup(this)">
+            <img src="img/scissor.jpg" alt="scissor" id="scissor" onclick="userPickup(this)">
+        </div>
+    </div>
+
+    <div id="displayResult" class="invisible">
+        <h1>Result</h1>
+        <div id="userPick">
+            <div>
+                <h2 class="U">User Choice</h2>
+
+                <img class="invisible" src="img/rock.jpg" alt="rock"id="rock1">
+                <img class="invisible"src="img/paper.jpg" alt="paper" id="paper1">
+                <img class="invisible"src="img/scissor.jpg" alt="scissor"id="scissor1">
+            </div>
+
+            <div>
+                <h2 class="B">Robot Choice</h2>
+
+                <img class="invisible"src="img/rock.jpg" alt="rock" id="rock2">
+                <img class="invisible"src="img/paper.jpg" alt="paper" id="paper2">
+                <img class="invisible"src="img/scissor.jpg" alt="scissor" id="scissor2">
+            </div>
+        </div>   
+    </div>
+               <h2 id="result"></h2>
+
+
+    <script src="game 1.rps.js"></script>
+</body> 
+</html>
